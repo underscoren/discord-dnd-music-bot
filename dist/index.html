@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waveform Audio Panel</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col border-right">
+                <h4 class="text-center">Music Effects</h4>
+                <div class="col border rounded" id="music-effects"></div>
+            </div>
+            <div class="col border-right">
+                <h4 class="text-center">Queue</h4>
+                <input type="range" id="global-volume" min="0" max="100" step="0.1">
+                <ul class="list-group" id="music-queue"></ul>
+            </div>
+            <div class="col">
+                <h4 class="text-center">SFX Effects</h4>
+                <div class="col border rounded" id="sfx-effects"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border-right">
+                <h4 class="text-center">Music Sources</h4>
+                <div class="row">
+                    <div id="music-favourites" class="col border rounded"></div>
+                </div>
+                <div class="col">
+                    <input type="text" id="music-sources-search" class="my-3" placeholder="Search (supports regex)">
+                    <ul class="list-group" class="mt-3" id="music-sources"></ul>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-center">SFX Sources</h4>
+                <div class="row">
+                    <div id="music-favourites" class="col border rounded"></div>
+                </div>
+                <div class="col">
+                    <input type="text" id="sfx-sources-search" class="my-3" placeholder="Search (supports regex)">
+                    <ul class="list-group" class="mt-3" id="sfx-sources"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
